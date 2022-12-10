@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 
 const blog = require('./models/blogs');
 
-const url = "mongodb+srv://dbuser:dbuser@cluster0.a2p0d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// Get the URL of you cluster from Mongodb
+// const url = <Your URl> 
 const connect = mongoose.connect(url, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
